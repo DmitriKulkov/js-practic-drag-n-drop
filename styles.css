@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dancing Script";
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  width: 90%;
+  max-width: 900px;
+  min-width: 400px;
+}
+
+.row > div:first-child {
+  border-left: none;
+}
+
+.col-header {
+  width: 30%;
+  padding: 0.8rem 1rem;
+  background: white;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.item {
+  width: 90%;
+  height: fit-content;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: center;
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 30%;
+  height: 60vh;
+  padding: 0.8rem 1rem;
+  background: white;
+  border-left: 1px solid black;
+}
+
+.hold {
+  border: 5px solid #eee;
+  opacity: .9;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border-top: 2px solid #8ed7ed;
+}
